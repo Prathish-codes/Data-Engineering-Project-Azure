@@ -9,14 +9,13 @@ This project demonstrates data engineering pipelines built on Azure. It uses Azu
 <img width="915" height="756" alt="image" src="https://github.com/user-attachments/assets/16fcfd03-0746-4979-b737-3b7941743821" />
 
 
-**Data Ingestion:** Raw data ingested into Raw Container of Azure Data Lake Storage (ADLS)
-**Data Orchestration:** Pipeline built in Azure Data Factory (ADF)
-**Data Transformation:** Data transformed using Azure Databricks (PySpark)
-**Storage:** Transformed data stored in the Silver layer of ADLS
-**Incremental Loading:** Implemented incremental loading logic
-**SCD Type 1:** Applied SCD Type 1 for dimension tables
-**Star Schema:** Created fact and dimension tables
-**Gold Layer:** Final curated data stored in the Gold layer of ADLS
-
+- **Data Ingestion:** Raw data ingested into Raw Container of Azure Data Lake Storage (ADLS)
+- **Data Orchestration:** Pipeline built in Azure Data Factory (ADF)
+- **Data Transformation:** Data transformed using Azure Databricks (PySpark)
+- **Storage:** Transformed data stored in the Silver layer of ADLS
+- **Incremental Loading:** Implemented incremental loading logic
+- **SCD Type 1:** Applied SCD Type 1 for dimension tables
+- **Star Schema:** Created fact and dimension tables
+- **Gold Layer:** Final curated data stored in the Gold layer of ADLS
 
 
