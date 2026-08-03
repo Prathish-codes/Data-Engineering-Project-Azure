@@ -23,6 +23,13 @@ This project demonstrates data engineering pipelines built on Azure. It uses Azu
 
 <img width="1073" height="470" alt="image" src="https://github.com/user-attachments/assets/6a934fd0-af46-4792-b57d-d1d8d21ec98a" />
 
+**increm_data_pipeline :**
+-Implements incremental loading with watermark logic
+-Writes Parquet to Bronze layer
+-Updates watermark table
+-Triggers Databricks notebooks to build Silver and Gold (dimensions and fact table) layer.
+
+<img width="1075" height="454" alt="image" src="https://github.com/user-attachments/assets/38d6a62b-336f-4674-bf64-cbec3f266d57" />
 
 
 ## Tech Stack
