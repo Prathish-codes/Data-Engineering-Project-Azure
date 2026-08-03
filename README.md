@@ -21,9 +21,7 @@ This project demonstrates data engineering pipelines built on Azure. It uses Azu
 
 **source_prep :** Ingests raw CSV data into Azure SQL Database (source_data table) using Copy activity with column mappings.
 
-
-
-
+<img width="1073" height="470" alt="image" src="https://github.com/user-attachments/assets/6a934fd0-af46-4792-b57d-d1d8d21ec98a" />
 
 
 
