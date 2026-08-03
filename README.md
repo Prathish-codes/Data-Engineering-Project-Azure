@@ -29,15 +29,21 @@ This project demonstrates data engineering pipelines built on Azure. It uses Azu
 
 
 
-**Tech Stack**
--SQL Database – Data Source
--Azure Data Factory (ADF) – Pipeline orchestration
--Azure Data Lake Storage (ADLS) – Data storage layers (Bronze, Silver, Gold)
--Azure Databricks (PySpark) – Data transformation and SCD Type 1 logic
--Star Schema – Data model
+## Tech Stack
 
-**increm_data_pipeline :**
--Implements incremental loading with watermark logic
--Writes Parquet to Bronze layer
--Updates watermark table
+- **SQL Server** – Source database
+- **Azure Data Factory (ADF)** – Pipeline orchestration and data ingestion
+- **Azure Data Lake Storage Gen2 (ADLS)** – Bronze, Silver, and Gold storage layers
+- **Azure Databricks (PySpark)** – Data transformation and business logic
+- **Delta Lake** – ACID transactions and optimized storage
+- **Star Schema** – Analytics data model
+
+## Pipeline: increm_data_pipeline
+
+- Reads only new and updated records using **watermark-based incremental loading**
+- Extracts data from SQL Server
+- Writes raw data as **Parquet** files to the **Bronze** layer
+- Updates the watermark table after successful ingestion
+- Triggers Databricks notebooks for Silver and Gold processing
+- Creates dimension and fact tables in the Gold layer
 -Triggers Databricks notebooks to build Silver and Gold (dimensions and fact table) layer.
