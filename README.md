@@ -5,12 +5,7 @@ This project demonstrates data engineering pipelines built on Azure. It uses Azu
 
 ##  Architecture  
 
-
-<img width="915" height="756" alt="image" src="https://github.com/user-attachments/assets/16fcfd03-0746-4979-b737-3b7941743821" />
-
 <img width="1078" height="601" alt="image" src="https://github.com/user-attachments/assets/b9446e3a-e3e1-4200-8a26-404cd1f14e78" />
-
-
 
 - **Data Ingestion:** Raw data ingested into Raw Container of Azure Data Lake Storage (ADLS)
 - **Data Orchestration:** Pipeline built in Azure Data Factory (ADF)
