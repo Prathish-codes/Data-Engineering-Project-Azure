@@ -23,6 +23,19 @@ This project demonstrates data engineering pipelines built on Azure. It uses Azu
 
 **source_prep :** Ingests raw CSV data into Azure SQL Database (source_data table) using Copy activity with column mappings.
 
+
+
+
+
+
+
+**Tech Stack**
+-SQL Database – Data Source
+-Azure Data Factory (ADF) – Pipeline orchestration
+-Azure Data Lake Storage (ADLS) – Data storage layers (Bronze, Silver, Gold)
+-Azure Databricks (PySpark) – Data transformation and SCD Type 1 logic
+-Star Schema – Data model
+
 **increm_data_pipeline :**
 -Implements incremental loading with watermark logic
 -Writes Parquet to Bronze layer
