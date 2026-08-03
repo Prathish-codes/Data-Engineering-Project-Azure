@@ -19,3 +19,12 @@ This project demonstrates data engineering pipelines built on Azure. It uses Azu
 - **Gold Layer:** Final curated data stored in the Gold layer of ADLS
 
 
+##  Azure Data Factory Pipelines
+
+**source_prep :** Ingests raw CSV data into Azure SQL Database (source_data table) using Copy activity with column mappings.
+
+**increm_data_pipeline :**
+-Implements incremental loading with watermark logic
+-Writes Parquet to Bronze layer
+-Updates watermark table
+-Triggers Databricks notebooks to build Silver and Gold (dimensions and fact table) layer.
